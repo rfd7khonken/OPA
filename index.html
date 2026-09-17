@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Avatar 3D</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <p class="eyebrow">AI AVATAR LIVE</p>
+        <h1>AI Avatar 3D บนเว็บไซต์</h1>
+      </header>
+
+      <section class="avatar-card">
+        <div id="avatar-placeholder">
+          <div id="avatar-face">🙂</div>
+          <p id="avatar-status">Avatar พร้อมสนทนา</p>
+        </div>
+      </section>
+
+      <section class="chat-card">
+        <p class="label">AI Avatar พูดว่า</p>
+        <p id="answer">สวัสดีค่ะ ฉันคือ AI Avatar ยินดีที่ได้พูดคุยกับคุณค่ะ</p>
+        <p class="notice">เสียงที่ได้ยินเป็นเสียงที่สร้างโดยเบราว์เซอร์</p>
+
+        <div class="actions">
+          <button id="speak-button" type="button">▶ พูดอีกครั้ง</button>
+          <button id="stop-button" type="button">■ หยุดพูด</button>
+        </div>
+
+        <form id="chat-form">
+          <input
+            id="message"
+            type="text"
+            maxlength="1000"
+            placeholder="พิมพ์ข้อความคุยกับ Avatar..."
+            autocomplete="off"
+            required
+          />
+          <button id="send-button" type="submit">ส่ง</button>
+        </form>
+
+        <p id="error-message" class="error"></p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

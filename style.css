@@ -1,0 +1,137 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, -apple-system, "Noto Sans Thai", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #020617;
+  color: #f8fafc;
+}
+
+.container {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.eyebrow,
+.label,
+.notice {
+  color: #94a3b8;
+}
+
+.eyebrow {
+  color: #67e8f9;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 8px 0 24px;
+  font-size: clamp(28px, 5vw, 42px);
+}
+
+.avatar-card,
+.chat-card {
+  border: 1px solid #334155;
+  border-radius: 20px;
+  background: #0f172a;
+  padding: 24px;
+}
+
+.avatar-card {
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(#1e293b, #020617);
+}
+
+#avatar-placeholder {
+  text-align: center;
+}
+
+#avatar-face {
+  font-size: 160px;
+  line-height: 1;
+  transition: transform 0.12s ease;
+}
+
+#avatar-face.speaking {
+  animation: talking 0.22s infinite alternate;
+}
+
+@keyframes talking {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(1.08);
+  }
+}
+
+#avatar-status {
+  margin-top: 20px;
+  color: #67e8f9;
+}
+
+.chat-card {
+  margin-top: 20px;
+}
+
+#answer {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.notice {
+  font-size: 12px;
+}
+
+.actions,
+form {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+}
+
+input,
+button {
+  border-radius: 12px;
+  border: 1px solid #475569;
+  padding: 12px 16px;
+  font: inherit;
+}
+
+input {
+  background: #1e293b;
+  color: white;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background: #22d3ee;
+  color: #082f49;
+  font-weight: 700;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.error {
+  min-height: 24px;
+  color: #fca5a5;
+}
