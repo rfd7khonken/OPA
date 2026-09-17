@@ -1,5 +1,4 @@
-const modelUrl = "./avatar/character.vrm";
-
+const MODEL_PATH = "/OPA/avatar/character.vrm";
 loader.load(
   modelUrl,
 
