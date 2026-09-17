@@ -84,7 +84,7 @@ function speak(text) {
  */
 function callGoogleWebApp(message) {
   return new Promise((resolve, reject) => {
-    if (!WEB_APP_URL || WEB_APP_URL.includes("วาง_URL")) {
+    if (!WEB_APP_URL || WEB_APP_URL.includes("https://script.google.com/macros/s/AKfycbxo-NAlOjKj5VjQJJ55w7ZN198wDOxjHHDJy3l8V0ktETXRUxy2-H_0NXx4UCxfHxNgrQ/exec")) {
       reject(new Error("กรุณาตั้งค่า WEB_APP_URL ในไฟล์ app.js"));
       return;
     }
