@@ -1,4 +1,4 @@
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbz2c-H7FXSnTdR6E6Gd11uXyswKom8Pc_oKg8U5Lz75xe9mRACyA75FiZdkJGzmUN6tCw/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbw47JVrCk1Luc3s54RAn-duzk4wDB9KXMKKVJr3OYMebOvgF76EeIn0nENdpp8eiw7khA/exec";
 
 const form = document.querySelector("#chat-form");
 const messageInput = document.querySelector("#message");
